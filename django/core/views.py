@@ -104,8 +104,10 @@ def about_page(request):
     return render(request, 'core/about.html')
 
 from .models import UserProfile, Course, Enrollment, FormSubmission, Appointment, Message
+from .decorators import role_required
 
 @login_required(login_url='login')
+@role_required(['student'])
 def student_dashboard(request):
     user = request.user
     profile = user.userprofile
@@ -185,6 +187,7 @@ def student_dashboard(request):
     return render(request, 'core/student.html', context)
 
 @login_required(login_url='login')
+@role_required(['adviser'])
 def adviser_dashboard(request):
     user = request.user
     
@@ -244,6 +247,7 @@ def adviser_dashboard(request):
     return render(request, 'core/adviser.html', context)
 
 @login_required(login_url='login')
+@role_required(['admin'])
 def admin_dashboard(request):
     if not request.user.is_superuser and request.user.userprofile.role != 'admin':
         messages.error(request, "Access denied.")

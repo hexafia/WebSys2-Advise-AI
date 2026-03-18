@@ -50,6 +50,15 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# Security Hardening: Spoofing Countermeasures
+SESSION_COOKIE_HTTPONLY = True
+CSRF_COOKIE_HTTPONLY = True
+
+# For production, you would also enable these if using HTTPS:
+# SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+
+
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
