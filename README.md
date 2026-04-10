@@ -1,4 +1,6 @@
 # WebSys2-Advise-AI
 
-Nothing yet
-- API for chatbot
+TO-DO
+- API for chatbot (refining)
+- Fixing the Student-Admin connection
+- Fixing the Student-Adviser connection
