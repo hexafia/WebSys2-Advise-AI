@@ -5,3 +5,4 @@ TO-DO
 - Fixing the Student-Admin connection
 - Fixing the Student-Adviser connection
 - Fixing notification
+- Adviser dashboard (server error 500)
