@@ -1,4 +1,4 @@
-#WebSys2 Advise AI
+WebSys2 Advise AI
 
 TO DO
 
@@ -6,7 +6,7 @@ TO DO
 -Fix Student Adviser connection
 -Fix notification system
 
-#Adviser Dashboard
+Adviser Dashboard
 My Students
 
 Show all students 
