@@ -18,6 +18,6 @@ Messages
 -Fix message loading and sending
 -Ensure real time or proper refresh of messages
 
-#General
+General
 Improve data syncing between student, adviser, and admin
 Fix broken links in dashboard navigation
